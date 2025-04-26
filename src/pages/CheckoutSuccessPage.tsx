@@ -1,7 +1,8 @@
+
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileInvoice } from "lucide-react";
+import { CheckCircle, FileText } from "lucide-react";
 
 export default function CheckoutSuccessPage() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ export default function CheckoutSuccessPage() {
       <div className="space-y-4">
         <Button asChild variant="outline" className="w-full">
           <Link to={`/order/${orderNumber}`}>
-            <FileInvoice className="mr-2 h-4 w-4" />
+            <FileText className="mr-2 h-4 w-4" />
             View Order Details
           </Link>
         </Button>

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { FileInvoice } from "lucide-react";
+import { FileText } from "lucide-react";
 import { formatPrice } from "@/data/products";
 
 export default function OrderDetailsPage() {
@@ -50,7 +50,7 @@ export default function OrderDetailsPage() {
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-3xl font-bold">Order Details</h1>
         <Button variant="outline">
-          <FileInvoice className="mr-2 h-4 w-4" />
+          <FileText className="mr-2 h-4 w-4" />
           Download Invoice
         </Button>
       </div>
